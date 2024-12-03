@@ -2,6 +2,6 @@
 
 ## Membros da Equipe
 
-1. Fulano de Tal
-2. Sicrano de Tal
-3. Beltrano de Tal
+1. Bruno Aguiar
+2. Byanca Balbino
+3. Loriel Martins
