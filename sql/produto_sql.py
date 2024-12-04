@@ -9,8 +9,8 @@ SQL_CRIAR_TABELA = """
 """
 
 SQL_INSERIR = """
-    INSERT INTO produto (nome, categoria, categoria, descricao, preco, estoque) 
-    VALUES (?, ?, ?, ?, ?, ?);
+    INSERT INTO produto (nome, categoria, descricao, preco, estoque) 
+    VALUES (?, ?, ?, ?, ?);
 """
 
 SQL_ALTERAR = """

@@ -31,11 +31,9 @@ def post_alterar_produto(
     id: int = Path(...),
     nome: str = Form(...),
     categoria: str = Form(...),
-    categoria: str = Form(...),
     descricao: str = Form(...),
     estoque: int = Form(...),
     preco: float = Form(...)):
-    produto = ProdutoModel(id, nome, categoria, descricao, preco, estoque)
     produto = ProdutoModel(id, nome, categoria, descricao, preco, estoque)
     if ProdutoRepo.alterar(produto):
         response = RedirectResponse("/admin", 303)
@@ -59,11 +57,9 @@ def post_inserir_produto(
     request: Request,
     nome: str = Form(...),
     categoria: str = Form(...),
-    categoria: str = Form(...),
     descricao: str = Form(...),
     estoque: int = Form(...),
     preco: float = Form(...)):
-    produto = ProdutoModel(None, nome, categoria, descricao, preco, estoque)
     produto = ProdutoModel(None, nome, categoria, descricao, preco, estoque)
     if ProdutoRepo.inserir(produto):
         response = RedirectResponse("/admin", 303)

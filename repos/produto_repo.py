@@ -1,6 +1,5 @@
 from typing import Optional, List
 from models.produto_model import *
-from models.produto_model import *
 from sql.produto_sql import *
 from util.db import obter_conexao
 
